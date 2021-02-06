@@ -15,9 +15,31 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            versionNameSuffix = '-debug'
+            manifestPlaceholders = [
+                    applicationLabel: "Banking[D]",
+                    appIcon: "@mipmap/ic_logo_debug",
+                    appIconRound: "@mipmap/ic_logo_debug_round"
+            ]
+        }
+
+        staging {
+            manifestPlaceholders = [
+                    applicationLabel: "Banking[S]",
+                    appIcon: "@mipmap/ic_logo_staging",
+                    appIconRound: "@mipmap/ic_logo_staging_round"
+            ]
+        }
+
         release {
+            manifestPlaceholders = [
+                    applicationLabel: "Banking",
+                    appIcon: "@mipmap/ic_launcher",
+                    appIconRound: "@mipmap/ic_launcher_round"
+            ]
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
