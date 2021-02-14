@@ -76,6 +76,7 @@
                             android:importantForAutofill="no"
                             android:inputType="phone"
                             android:maxLines="1"
+                            android:maxLength="12"
                             android:text="@={viewmodel.phone}" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,7 +84,8 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:passwordToggleEnabled="true">
 
                         <EditText
                             android:id="@+id/editTextPassword"
@@ -92,6 +94,7 @@
                             android:importantForAutofill="no"
                             android:inputType="textPassword"
                             android:maxLines="1"
+                            android:maxLength="12"
                             android:text="@={viewmodel.password}" />
                     </com.google.android.material.textfield.TextInputLayout>
 <!--                    android:onClick="@{viewmodel::onLoginButtonClick}"-->
