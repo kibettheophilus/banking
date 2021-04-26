@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/statementList"
         android:name="com.jamesnyakush.digipay.statement.fragment.StatementList"
-        android:label="StatementList"
+        android:label="Statement"
         tools:layout="@layout/statement_list_fragment"/>
 </navigation>

@@ -1,3 +1,4 @@
+include ':features:Nhif'
 include ':features:Statement'
 include ':lib:core'
 include ':lib:repository'

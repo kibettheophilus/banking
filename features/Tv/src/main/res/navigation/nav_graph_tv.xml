@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/payFragment"
         android:name="com.jamesnyakush.digipay.tv.fragment.PayFragment"
-        android:label="PayFragment"
+        android:label="Pay TV"
         tools:layout="@layout/pay_fragment" >
         <action
             android:id="@+id/action_payFragment_to_kwese"
