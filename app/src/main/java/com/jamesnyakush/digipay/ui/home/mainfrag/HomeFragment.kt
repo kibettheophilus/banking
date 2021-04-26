@@ -38,6 +38,7 @@ class HomeFragment : Fragment(R.layout.home_fragment),View.OnClickListener {
         home_electricity.setOnClickListener(this)
         home_tv.setOnClickListener(this)
         home_water.setOnClickListener(this)
+        home_nhif.setOnClickListener(this)
 
 
         // Create slider image component
@@ -111,6 +112,14 @@ class HomeFragment : Fragment(R.layout.home_fragment),View.OnClickListener {
                     startActivity(intentTo(Activities.WaterModule.Water))
                 } else {
                     context?.toast("Water Module is not installed")
+                }
+            }
+
+            R.id.home_nhif -> {
+                if (splitInstallManager.installedModules.contains(NhifModule)) {
+                    startActivity(intentTo(Activities.NhifModule.Nhif))
+                } else {
+                    context?.toast("Nhif Module is not installed")
                 }
             }
         }
