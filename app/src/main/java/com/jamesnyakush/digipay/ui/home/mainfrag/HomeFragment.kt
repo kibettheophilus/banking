@@ -24,6 +24,7 @@ class HomeFragment : Fragment(R.layout.home_fragment),View.OnClickListener {
     private val ElectricityModule by lazy { getString(R.string.title_electricity) }
     private val TVModule by lazy { getString(R.string.title_tv) }
     private val WaterModule by lazy { getString(R.string.title_water) }
+    private val NhifModule by lazy { getString(R.string.title_nhif) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

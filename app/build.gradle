@@ -61,7 +61,8 @@ android {
             ':features:Wallet',
             ':features:Water',
             ':features:Airtime',
-            ':features:Statement'
+            ':features:Statement',
+            ':features:Nhif'
     ]
 }
 
