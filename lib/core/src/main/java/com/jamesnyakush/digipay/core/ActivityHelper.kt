@@ -91,4 +91,13 @@ object Activities {
             override val className = "$PACKAGE_NAME.water.activity.Water"
         }
     }
+
+    /**
+     *
+     */
+    object NhifModule{
+        object Nhif : AddressableActivity {
+            override val className = "$PACKAGE_NAME.nhif.activity.Nhif"
+        }
+    }
 }
